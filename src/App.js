@@ -1,7 +1,8 @@
 import React from 'react';
-import  { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
+import  { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Users from './users/pages/Users';
+import Auth from './users/pages/Auth';
 import LearningAssets from './development/pages/LearningAssets';
 import NewPlace from './places/pages/NewPlace';
 import UserPlaces from './places/pages/UserPlaces';
@@ -29,7 +30,9 @@ const App = () => {
          <Route path="/places/:placeId">
            <UpdatePlace />
          </Route>
-         <Redirect to="/"/>
+         <Route path="/auth">
+            <Auth/>
+         </Route>
         </Switch>
       </main>
       </Router>
