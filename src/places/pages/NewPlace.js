@@ -26,8 +26,6 @@ const NewPlace = () => {
     }, false 
 );
 
-
-
     const placeSubmitHandler = event => {
         event.preventDefault();
         console.log(formState.inputs);
