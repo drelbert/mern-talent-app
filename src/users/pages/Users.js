@@ -9,6 +9,18 @@ const Users = () => {
       name: 'Mongo Martines', 
       image: '',
       places: 3
+    }, 
+    {
+      id: 'u979G', 
+      name: 'La Sra Boss', 
+      image: '',
+      places: 2
+    },
+    {
+      id: 'u975X', 
+      name: 'Monty Martinecs', 
+      image: '',
+      places: 1
     }];
 
   return <UsersList items={USERS}/>;
