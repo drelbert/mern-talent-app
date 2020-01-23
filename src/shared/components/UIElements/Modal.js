@@ -41,10 +41,10 @@ const Modal = props => {
                 timeout={200}
                 classNames="modal"
                 >
-                    <ModalOverlay {...props} />
-                </CSSTransition>
+                <ModalOverlay {...props} />
+            </CSSTransition>
         </React.Fragment>
-    )
+    );
 };
 
 export default Modal;

@@ -3,12 +3,13 @@ import  { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-
 
 import Users from './users/pages/Users';
 import Auth from './users/pages/Auth';
-import LearningAssets from './development/pages/LearningAssets';
+import DevelopmentAssets from './devAssets/pages/DevelopmentAssets';
 import NewPlace from './places/pages/NewPlace';
 import UserPlaces from './places/pages/UserPlaces';
 import MainNavigation from './shared/components/Navigation/MainNavigation';
 import UpdatePlace from './places/pages/UpdatePlace';
 import { AuthContext } from './shared/context/auth-context';
+import NewDevAsset from './devAssets/pages/NewDevAsset';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -39,7 +40,10 @@ const App = () => {
           <UpdatePlace />
         </Route>
        <Route path="/development/assets" exact>
-          <LearningAssets />
+          <DevelopmentAssets />
+       </Route>
+       <Route path="/development/new" exact>
+         <NewDevAsset/>
        </Route>
          <Redirect to="/" />
       </Switch>
