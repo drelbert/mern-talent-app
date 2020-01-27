@@ -1,6 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import  { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
+import Dashboard from './dashboard/Dashboard';
 import Users from './users/pages/Users';
 import Auth from './users/pages/Auth';
 import DevelopmentAssets from './devAssets/pages/DevelopmentAssets';
@@ -28,6 +29,9 @@ const App = () => {
     routes = (
       <Switch>
         <Route path="/" exact>
+          <Dashboard/>
+        </Route>
+        <Route path="/users" exact>
           <Users/>
         </Route>
         <Route path="/:userId/places" exact>

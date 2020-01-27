@@ -1,3 +1,18 @@
+MERN Talent App Build Notes
+# npm installs
+  d3-scale
+  d3-shape
+  d3-svg-legend
+  d3-array
+  d3-geo
+  d3-selection
+  d3-transition
+  d3-brush
+  d3-axis
+
+
+<hr>
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

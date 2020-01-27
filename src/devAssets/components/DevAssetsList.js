@@ -16,7 +16,6 @@ const DevAssetsList = props => {
         </div>
     )
   };
-  
 
   return <ul className="dev-list">
       {props.items.map(devAsset => <DevAssetItem 
@@ -24,7 +23,7 @@ const DevAssetsList = props => {
         id={devAsset.id} 
         title={devAsset.title} 
         description={devAsset.description} 
-        creatorId={DevAssetsList.creatorId} 
+        addedBy={devAsset.addedBy}
         />)}
   </ul>;
 

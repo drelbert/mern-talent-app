@@ -14,13 +14,13 @@ const Users = () => {
       id: 'u979G', 
       name: 'La Sra Boss', 
       image: '',
-      places: 2
+      places: 0
     },
     {
       id: 'u975X', 
       name: 'Monty Martinecs', 
       image: '',
-      places: 1
+      places: 0
     }];
 
   return <UsersList items={USERS}/>;

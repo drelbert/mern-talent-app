@@ -23,9 +23,11 @@ const DevAssetItem = props => {
            footer={<Button onClick={closeDetailsHandler}>CLOSE</Button>}
            >
           <div className="details-container">
-              <h2 className="dev-item__info h2">{props.description}</h2>
+              <h2 className="dev-item__info h2">Description-{props.description}</h2>
+              <h2 className="dev-item__info h2">Added By-{props.addedBy}</h2>
           </div>  
         </Modal>
+
       <li className="dev-item">
           <Card className="dev-item__content">
           <div className="dev-item__info">
